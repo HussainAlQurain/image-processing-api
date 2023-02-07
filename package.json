@@ -1,0 +1,37 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --config .prettierrc ./build/**/*.js --write",
+    "lint": "eslint ./build --ext .js",
+    "build": "npx tsc",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine",
+    "start": "nodemon src/server.ts"
+  },
+  "author": "h5",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.16",
+    "@types/jasmine": "^4.3.1",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.11.18",
+    "@types/supertest": "^2.0.12",
+    "eslint": "^8.32.0",
+    "prettier": "^2.8.3",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.6.0",
+    "express": "^4.18.2",
+    "jasmine": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.20",
+    "sharp": "^0.31.3"
+  }
+}
