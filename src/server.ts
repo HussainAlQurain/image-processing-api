@@ -20,15 +20,14 @@ req.params()
 
 const middleware = [logger, routes];
 
-app.listen(port,"localhost", () => {
-    console.log(`server started at http://localhost:${port};`)
+app.listen(port, 'localhost', () => {
+    console.log(`server started at http://localhost:${port};`);
 });
 
 app.use('/api', middleware);
 
-app.get('/', (req, res) => {
+app.get('/', (req: express.Request, res: express.Response): void => {
     res.send('Please use route /api/images');
-})
-
+});
 
 export default app;

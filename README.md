@@ -1,10 +1,11 @@
 ## Scripts:
 ###    -prettier: npm run prettier
-###    -build: npm run build
 ###    -lint: npm run lint
 ###    -jasmine: npm run jasmine
 ###    -run unit tests: npm run test
+###    -build: npm run build
 ###    -start server: npm run start
+###    -after building the project we can run the server using node ./build/server.ts
     
 ## Usage:
 ### -The server will listen on port 3000:
